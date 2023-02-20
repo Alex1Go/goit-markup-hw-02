@@ -1,7 +1,11 @@
 :root {
     --primary-fon-color: #FFFFFF;
+    --color-logo-btn-pmenu: #4D5AE5;
     --color-menu-h: #2E2F42;
     --color-adress-p: #434455;
+    --color-hover-focus: #404BBF;
+    --color-footer-text: #E7E9FC;
+    --color-back-fonteam-logo2-pmenubtn: #F4F4FD;
 }
 
 .list {
@@ -14,8 +18,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.02em;
-    font-weight: 400;
+    color: var(--primary-fon-color);
 }
 
 /* ============ Header ==========*/
@@ -24,11 +27,9 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--color-logo-btn-pmenu);
 }
 
 .logo-second {
@@ -39,24 +40,27 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--color-menu-h);
 }
 
 .menu-contact {
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--color-adress-p);
     font-style: normal;
 }
 
 .menu-link:hover,
-.menu-link:focus {
-    color: #404BBF;
+.menu-link:focus,
+.current {
+    color: var(--color-hover-focus);
 }
 
 .menu-contact:hover,
 .menu-contact:focus {
-    color: #404BBF;
+    color: var(--color-hover-focus);
 }
 
 /* ============ /Header ==========*/
@@ -67,16 +71,27 @@ body {
 }
 
 .hero-title {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 0.02em;
     text-align: center;
     color: var(--primary-fon-color);
 }
 
 .hero-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
     color: var(--primary-fon-color);
-    background-color: #4D5AE5;
+    background-color: var(--color-logo-btn-pmenu);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--color-hover-focus);
 }
 
 /* ============ /Hero Section ========== */
@@ -86,12 +101,14 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     color: var(--color-menu-h);
 }
 
 .feature-text {
     font-size: 16px;
     line-height: 1.50;
+    letter-spacing: 0.02em;
     color: var(--color-adress-p);
 }
 
@@ -99,9 +116,9 @@ body {
 
 /* ============ Promo Section ============*/
 .promo-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
     color: var(--color-menu-h);
@@ -111,16 +128,22 @@ body {
 
 /* ============ Team Section =============*/
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--color-back-fonteam-logo2-pmenubtn);
+}
+
+.team-item {
+    width: 264px;
+    height: 380px;
+    background-color: var(--primary-fon-color);
 }
 
 .team-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(-color-menu-title-hero);
+    color: var(--color-menu-h);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -128,6 +151,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-menu-h);
 }
@@ -135,6 +159,7 @@ body {
 .team-text {
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-adress-p);
 }
@@ -151,27 +176,27 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--color-logo-btn-pmenu);
 }
 
 .logotype-second {
-    color: #F4F4FD;
+    color: var(--color-back-fonteam-logo2-pmenubtn);
 }
 
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
-    color: #E7E9FC;
+    letter-spacing: 0.02em;
+    color: var(--color-footer-text);
 }
 
 /* ========== /Footer ===========*/
 
 /* ==PORTFOLIO PAGE=== */
 .menu-filter-btn {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -179,26 +204,28 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
-    background-color: #F4F4FD;
+    cursor: pointer;
+    color: var(--color-logo-btn-pmenu);
+    background-color: var(--color-back-fonteam-logo2-pmenubtn);
 }
 
 .menu-filter-btn:hover,
 .menu-filter-btn:focus {
-    background-color: #404BBF;
+    background-color: var(--color-hover-focus);
     color: var(--primary-fon-color);
-    cursor: pointer;
 }
 
 .menu-filter-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--color-menu-h);
 }
 
 .menu-filter-text {
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--color-adress-p);
 }
